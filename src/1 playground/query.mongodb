@@ -1,0 +1,3 @@
+use("espoch_store")
+//hola
+db.producto.find()
