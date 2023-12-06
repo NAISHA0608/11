@@ -1,3 +1,2 @@
-use("espoch_store")
-//hola
-db.producto.find()
+use("corea_sur")
+db.seul.find()
