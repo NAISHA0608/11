@@ -1,0 +1,13 @@
+use("sample_training")
+//$unset
+db.zips.updateMany(
+    //query
+    {city:"REMLAP"},
+    //update (2369,1244)
+    {
+        $unset:{
+            Coca:"",
+            Esmeralda:""
+        }
+    }
+)

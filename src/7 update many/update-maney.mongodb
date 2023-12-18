@@ -1,0 +1,11 @@
+use("sample_training")
+db.zips.updateMany(
+    //query
+    {city:"REMLAP"},
+    //update (2369,1244)
+    {
+        $inc:{
+            pop: 2000,
+        }
+    }
+)

@@ -1,0 +1,13 @@
+use("sample_training")
+//$set
+db.zips.updateMany(
+    //query
+    {city:"REMLAP"},
+    //update 
+    {
+        $rename:{
+            ID1:"Coca",
+            ID2:"Esmeralda",
+        }
+    }
+)

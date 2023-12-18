@@ -1,0 +1,12 @@
+use("sample_training")
+db.zips.updateMany(
+    //query
+    {city:"REMLAP"},
+    //update (2369,1244)
+    {
+        $set:{
+            ID1:"Esmeralda",
+            ID2:"Coca",
+        }
+    }
+)

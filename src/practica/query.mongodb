@@ -1,0 +1,2 @@
+use("coca")
+db.colegio.find()

@@ -1,0 +1,20 @@
+use("coca")
+db.colegio.drop()
+db.colegio.insertMany([
+    { 
+    _id:1,
+    name:"GAMBOA",
+   },
+   {    
+   _id:2,
+    name:"AMAZONAS",
+   },
+   {    
+    name:"TAMAYO",
+    direccion:"av 9 de octubre"
+   },
+   {
+    name:"MILITAR",
+   },
+])
+db.producto.find()

@@ -1,0 +1,25 @@
+use("espoch_store")
+db.producto.drop()
+db.producto.insertMany([
+    { 
+    _id:1,
+    name:"Producto 1",
+    price:1200
+   },
+   {    
+   _id:2,
+    name:"Producto 2",
+    price:1300
+   },
+   {    
+   _id:3,
+    name:"Producto 3",
+    price:1400
+   },
+   {
+    _id:4,
+    name:"Producto 4",
+    price:1500
+   }
+])
+db.producto.find()

@@ -1,0 +1,13 @@
+use("espoch_store")
+db.producto.updateOne(
+    //query
+    {_id:ObjectId("6577fa4c7c6b0df093134a5b")},
+    //change
+    {
+        $set:{
+            name:'change',
+            price:4000,
+            tags:['A','B','C']
+        }
+    }
+)

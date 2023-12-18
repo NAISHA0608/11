@@ -1,0 +1,4 @@
+use("sample_training")
+//1db.zips.find().count()
+//2db.zips.find({city:"REMLAP"}).count()
+db.zips.find({city:"REMLAP"})
