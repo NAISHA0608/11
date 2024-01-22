@@ -1,0 +1,8 @@
+use("espoch_store")
+
+db.inventary.updateOne({_id:4},{
+    $push: {
+        tags: "headphone"
+    }
+})
+db.inventary.find()

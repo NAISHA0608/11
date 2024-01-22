@@ -1,0 +1,25 @@
+use("espoch_store")
+//Se crea un nuevo valor
+db.iot.insertOne({
+    sensor: "A001",
+    date: "2022-01-03", 
+    readings:[11]
+})
+//Agregamos un nuevo valor
+db.iot.updateOne({
+    sensor: "A001",
+    date: "2024-01-03", 
+     },{ 
+    $push: { 
+    readings:[2323]
+}
+})
+db.iot.updateOne({
+    sensor: "A001",
+    date:"2024-01-03",
+     },{ 
+        $pop:{
+            readings: 1
+        }
+})
+

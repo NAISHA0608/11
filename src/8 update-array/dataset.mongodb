@@ -1,0 +1,22 @@
+use("espoch_store")
+db.inventory.drop()
+db.inventory.insertMany([
+ { _id: 1, item: { name: "item ab", code: "123", description : "Single line description." }, qty: 15, tags: [ "school","book", "bag", "headphone", "appliance" ], },
+ { _id: 2, item: { name: "item cd", code: "123", description : "First line\nSecond line" }, qty: 20, tags: [ "appliance","school", "book" ] },
+ { _id: 3, item: { name: "item ij", code: "456", description : "Many spaces before line" }, qty: 25, tags: [ "school","book" ] },
+{ _id: 4, item: { name: "item xy", code: "456", description : "Single line description." }, qty: 15, tags: [ "school","book", "bag", "headphone", "appliance" ], },
+ { _id: 5, item: { name: "item mn", code: "000" }, qty: 20, tags: [ "appliance","school", "book" ] },
+])
+db.inventory.find()
+
+
+
+//*use("espoch_store")
+//db.iot.drop()
+//db.iot.insertMany([
+//{ _id: 1, sensor: "A001", date: "2022-01-01", readings: [1,2,3,4] },
+//{ _id: 2, sensor: "A001", date: "2022-01-02", readings: [1,2,3,4] },
+//{ _id: 3, sensor: "A002", date: "2022-01-01", readings: [1,2,3,4] },
+//{ _id: 4, sensor: "A002", date: "2022-01-02", readings: [1,2,3,4] },
+//])
+//db.iot.find()

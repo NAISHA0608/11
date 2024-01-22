@@ -1,7 +1,7 @@
 use("espoch_store")
 db.producto.updateOne(
     //query
-    {_id:ObjectId("6577990bdf45a6d49ba86ee7")},
+    {_id:ObjectId("6580b7cd2d48b373a19c365a")},
     //change
     {
         $inc:{

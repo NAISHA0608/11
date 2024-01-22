@@ -1,0 +1,19 @@
+use("espoch_store")
+
+db.inventary.updateOne({_id:4},{
+    $push: {
+        tags: "book"
+    }
+})
+db.inventary.find()
+
+use("espoch_store")
+
+db.inventary.updateOne({_id:4},{
+    $push: {
+        tags: {
+            $in:["appliance","school"]
+        }
+    }
+})
+db.inventary.find()
